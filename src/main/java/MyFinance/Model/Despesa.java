@@ -24,41 +24,6 @@ public class Despesa implements Serializable {
         return valor;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
-
-    public String getDataDaCompra() {
-        return dataDaCompra;
-    }
-
-    public void setDataDaCompra(String dataDaCompra) {
-        this.dataDaCompra = dataDaCompra;
-    }
-
-    public String getDataVencimento() {
-        return dataVencimento;
-    }
-
-    public void setDataVencimento(String dataVencimento) {
-        this.dataVencimento = dataVencimento;
-    }
-
-    public String getQuemDevoPagar() {
-        return quemDevoPagar;
-    }
-
-    public void setQuemDevoPagar(String quemDevoPagar) {
-        this.quemDevoPagar = quemDevoPagar;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public int getId() {
         return id;
@@ -93,7 +58,7 @@ public class Despesa implements Serializable {
 
     @Override
     public String toString() {
-        return "\nDespesa: " + this.nome + "| Valor : R$" + this.valor + "| Data da compra: " + this.dataDaCompra + "| Data do vencimento: "
-                + this.dataVencimento + "| A quem devo pagar: " + this.quemDevoPagar + "| ID: " + this.id;
+        return "\nDespesa: " + this.nome + ", Valor : R$" + this.valor + ", Data da compra: " + this.dataDaCompra + ", Data do vencimento: "
+                + this.dataVencimento + ", A quem devo pagar: " + this.quemDevoPagar + ", ID: " + this.id;
     }
 }

@@ -1,11 +1,11 @@
 package MyFinance.Model;
 
 import MyFinance.Excpetions.*;
+import MyFinance.Persistencia.GravadorDeDados;
 
+import java.io.IOException;
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Conta implements Serializable {
@@ -15,10 +15,12 @@ public class Conta implements Serializable {
     private Map<Integer,Receita> receitasList;
     private Map<Integer,Despesa> despesasList;
     private int id;
+    private GravadorDeDados gravador = new GravadorDeDados();
 
     public Conta() {
         this.despesasList = new HashMap<>();
         this.receitasList = new HashMap<>();
+        recuperaDados();
 
     }
 
@@ -33,6 +35,7 @@ public class Conta implements Serializable {
         this.receitasList.put(r.getId(), r);
         this.saldo += r.getValor();
         this.valorReceitas += r.getValor();
+        this.id =+ 1;
     }
 
     public void removerDespesa(int idDespesa) throws DespesaNaoExisteExcpetion {
@@ -55,7 +58,7 @@ public class Conta implements Serializable {
             Receita receita = receitasList.get(idReceita);
             receitasList.remove(idReceita);
             this.valorReceitas -= receita.getValor();
-            this.saldo -= receita.getId();
+            this.saldo -= receita.getValor();
         } else{
             throw new ReceitaNaoExisteExcpetion("Receita não existe no sistema.");
         }
@@ -77,7 +80,7 @@ public class Conta implements Serializable {
         return despesasList.size();
     }
 
-
+    public int getIDReceita(){ return receitasList.size();};
 
     public Map<Integer, Receita> getReceitas() {
         return receitasList;
@@ -85,6 +88,23 @@ public class Conta implements Serializable {
 
     public Map<Integer, Despesa> getDespesas() {
         return despesasList;
+    }
+
+    public void salvarDados(){
+        try {
+            this.gravador.salvarDespesas(this.despesasList);
+            this.gravador.salvarReceitas(this.receitasList);
+        } catch(Exception e){
+            System.err.println(e.getMessage());
+        }
+    }
+    public void recuperaDados(){
+        try {
+            this.despesasList = this.gravador.recuperarDespesas();
+            this.receitasList = this.gravador.recuperarReceitas();
+        } catch (IOException e){
+            System.err.println(e.getMessage());
+        }
     }
 }
 

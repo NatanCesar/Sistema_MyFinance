@@ -73,7 +73,7 @@ public class Receita implements Serializable {
 
     @Override
     public String toString() {
-        return "\nReceita: " + this.nome + "| Valor: R$" + this.valor + "| Data que vou receber: " + this.dataRecebimento +
-                "| Quem vai me pagar: " + this.quemVaiPagar + "| ID: " + this.id;
+        return "\nReceita: " + this.nome + ", Valor: R$" + this.valor + ", Data que vou receber: " + this.dataRecebimento +
+                ", Quem vai me pagar: " + this.quemVaiPagar + ", ID: " + this.id;
     }
 }

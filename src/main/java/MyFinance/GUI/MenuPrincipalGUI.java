@@ -61,7 +61,7 @@ public class MenuPrincipalGUI extends JFrame {
         menuCadastrarReceita.addActionListener(new menuAddReceitaControler(conta,this));
         menuCadastrarDespesa.addActionListener(new menuAddDespesaControler(conta,this));
         menuPesquisarDespesa.addActionListener(new menuPesquisaDespesaControler(conta,this));
-
+        menuPesquisarReceita.addActionListener(new menuPesquisaReceitaControler(conta,this));
         consultarSaldo.addActionListener((ae) ->{
             JOptionPane.showMessageDialog(null, "R$"+conta.getSaldo());
         });

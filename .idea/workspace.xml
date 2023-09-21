@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Commit Inicial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddDespesaControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddReceitaControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuPesquisaDespesaControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" afterDir="false" />
+    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Commit quase pronto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuPesquisaReceitaControler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddReceitaControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddReceitaControler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Despesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Despesa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Receita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MyFinance.Persistencia" />
+      <recent name="MyFinance.GUI" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFinance.Main" />
@@ -112,7 +116,7 @@
       <workItem from="1695075711663" duration="2190000" />
       <workItem from="1695139629663" duration="7967000" />
       <workItem from="1695178440504" duration="374000" />
-      <workItem from="1695244891324" duration="8405000" />
+      <workItem from="1695244891324" duration="12025000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Inicial">
       <created>1694690218633</created>
@@ -121,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694690218633</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit quase pronto">
+      <created>1695260031122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695260031122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Inicial" />
+    <MESSAGE value="Commit quase pronto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit quase pronto" />
   </component>
 </project>

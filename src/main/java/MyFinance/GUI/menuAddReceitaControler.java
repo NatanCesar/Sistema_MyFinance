@@ -23,7 +23,7 @@ public class menuAddReceitaControler implements ActionListener {
         String dataCompra = JOptionPane.showInputDialog(menu,"Qual data vou receber essa receita? ");
         String quemVouReceber = JOptionPane.showInputDialog(menu, "Quem vai me pagar essa receita? ");
 
-        Receita d = new Receita(nome,valor,dataCompra,quemVouReceber, conta.getIdDespesa());
+        Receita d = new Receita(nome,valor,dataCompra,quemVouReceber, conta.getIDReceita());
         conta.adicionarReceita(d);
 
         JOptionPane.showMessageDialog(menu,"Receita cadastrada com sucesso com o id: " + d.getId());
