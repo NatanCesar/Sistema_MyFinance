@@ -1,15 +1,18 @@
 package MyFinance.Model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Despesa {
+public class Despesa implements Serializable {
+    private String nome;
     private double valor;
     private String dataDaCompra;
     private String dataVencimento;
     private String quemDevoPagar;
     private int id;
 
-    public Despesa(double valor, String dataDaCompra, String dataVencimento, String quemDevoPagar, int id) {
+    public Despesa(String nome, double valor, String dataDaCompra, String dataVencimento, String quemDevoPagar, int id) {
+        this.nome = nome;
         this.valor = valor;
         this.dataDaCompra = dataDaCompra;
         this.dataVencimento = dataVencimento;
@@ -49,6 +52,14 @@ public class Despesa {
         this.quemDevoPagar = quemDevoPagar;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public int getId() {
         return id;
     }
@@ -82,7 +93,7 @@ public class Despesa {
 
     @Override
     public String toString() {
-        return "Valor da despesa: " + this.valor + ", Data da compra: " + this.dataDaCompra + ", Data do vencimento: "
-                + this.dataVencimento + ", A quem devo pagar: " + this.quemDevoPagar + ", ID: " + this.id;
+        return "\nDespesa: " + this.nome + "| Valor : R$" + this.valor + "| Data da compra: " + this.dataDaCompra + "| Data do vencimento: "
+                + this.dataVencimento + "| A quem devo pagar: " + this.quemDevoPagar + "| ID: " + this.id;
     }
 }

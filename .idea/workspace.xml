@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Excpetions/DespesaNaoExisteExcpetion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Excpetions/ReceitaNaoExisteExcpetion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Despesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Receita.java" afterDir="false" />
+    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Commit Inicial">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddDespesaControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddReceitaControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuPesquisaDespesaControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Despesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Despesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Receita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,20 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFinance.Main" />
       <module name="Sistema_MyFinance" />
@@ -78,9 +79,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MenuPrincipalGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyFinance.GUI.MenuPrincipalGUI" />
+      <module name="Sistema_MyFinance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyFinance.GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MenuPrincipalGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -93,11 +108,38 @@
       <option name="presentableId" value="Default" />
       <updated>1694646914264</updated>
       <workItem from="1694646915594" duration="5873000" />
-      <workItem from="1694689673271" duration="345000" />
+      <workItem from="1694689673271" duration="5371000" />
+      <workItem from="1695075711663" duration="2190000" />
+      <workItem from="1695139629663" duration="7967000" />
+      <workItem from="1695178440504" duration="374000" />
+      <workItem from="1695244891324" duration="8405000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit Inicial">
+      <created>1694690218633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694690218633</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Inicial" />
   </component>
 </project>

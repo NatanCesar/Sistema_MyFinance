@@ -1,15 +1,18 @@
 package MyFinance.Model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Receita {
+public class Receita implements Serializable {
+    private String nome;
     private double valor;
     private String dataRecebimento;
     private String quemVaiPagar;
     private int id;
 
 
-    public Receita(double valor, String dataRecebimento, String quemTaPagando, int id) {
+    public Receita(String nome, double valor, String dataRecebimento, String quemTaPagando, int id) {
+        this.nome = nome;
         this.valor = valor;
         this.dataRecebimento = dataRecebimento;
         this.quemVaiPagar = quemTaPagando;
@@ -70,7 +73,7 @@ public class Receita {
 
     @Override
     public String toString() {
-        return "Valor da receita: " + this.valor + ", Data que vou receber: " + this.dataRecebimento +
-                ", Quem vai me pagar: " + this.quemVaiPagar + ", ID: " + this.id;
+        return "\nReceita: " + this.nome + "| Valor: R$" + this.valor + "| Data que vou receber: " + this.dataRecebimento +
+                "| Quem vai me pagar: " + this.quemVaiPagar + "| ID: " + this.id;
     }
 }
