@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Commit quase pronto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuPesquisaReceitaControler.java" afterDir="false" />
+    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Tentativa de persitência de dados">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/ContaInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeReceitas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddReceitaControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/menuAddReceitaControler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Despesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Despesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Receita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDespesas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="MyFinance.Model" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="MyFinance.Persistencia" />
       <recent name="MyFinance.GUI" />
@@ -83,15 +86,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuPrincipalGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyFinance.GUI.MenuPrincipalGUI" />
+    <configuration name="ContaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sistema_MyFinance" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MyFinance.GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaTest.testaDespesas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sistema_MyFinance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContaTest" />
+      <option name="METHOD_NAME" value="testaDespesas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaTest.testaGravacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sistema_MyFinance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContaTest" />
+      <option name="METHOD_NAME" value="testaGravacao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaTest.testaGravacaoDespesa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sistema_MyFinance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContaTest" />
+      <option name="METHOD_NAME" value="testaGravacaoDespesa" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,7 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MenuPrincipalGUI" />
+        <item itemvalue="JUnit.ContaTest.testaDespesas" />
+        <item itemvalue="JUnit.ContaTest" />
+        <item itemvalue="JUnit.ContaTest.testaGravacaoDespesa" />
+        <item itemvalue="JUnit.ContaTest.testaGravacao" />
       </list>
     </recent_temporary>
   </component>
@@ -117,6 +149,10 @@
       <workItem from="1695139629663" duration="7967000" />
       <workItem from="1695178440504" duration="374000" />
       <workItem from="1695244891324" duration="12025000" />
+      <workItem from="1695263581070" duration="63000" />
+      <workItem from="1695294483410" duration="6111000" />
+      <workItem from="1695412242217" duration="1087000" />
+      <workItem from="1695574854597" duration="6366000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Inicial">
       <created>1694690218633</created>
@@ -132,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695260031122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tentativa de persitência de dados">
+      <created>1695263629171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695263629171</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Inicial" />
     <MESSAGE value="Commit quase pronto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit quase pronto" />
+    <MESSAGE value="Tentativa de persitência de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tentativa de persitência de dados" />
   </component>
 </project>

@@ -18,6 +18,7 @@ public class Main {
                         "Tem certeza de que quer sair e salvar?");
                 if (resp == JOptionPane.YES_OPTION) {
                     myConta.salvarDados();
+                    JOptionPane.showMessageDialog(null,"Salvo.");
                     System.exit(0);
                 }
             }

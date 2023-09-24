@@ -71,22 +71,32 @@ public class MenuPrincipalGUI extends JFrame {
         }));
 
         menuRemoverDespesa.addActionListener((ae -> {
-            int id = Integer.parseInt(JOptionPane.showInputDialog("Qual id da despesa? "));
-            try {
-                conta.removerDespesa(id);
-                JOptionPane.showMessageDialog(null,"Despesa removida com sucesso");
-            } catch (DespesaNaoExisteExcpetion e) {
-                JOptionPane.showMessageDialog(null, "ID não encontrada.");
+            if(!(conta.getDespesas().size() == 0)) {
+                int id = Integer.parseInt(JOptionPane.showInputDialog("Qual id da despesa? "));
+                try {
+                    conta.removerDespesa(id);
+                    JOptionPane.showMessageDialog(null, "Despesa removida com sucesso");
+                } catch (DespesaNaoExisteExcpetion e) {
+                    JOptionPane.showMessageDialog(null, "ID não encontrada.");
+                }
+            } else{
+                JOptionPane.showMessageDialog(null,"Nenhuma despesa foi cadastrada ainda.");
             }
+
         }));
         menuRemoverReceita.addActionListener((ae -> {
-            int id = Integer.parseInt(JOptionPane.showInputDialog("Qual id da receita? "));
-            try {
-                conta.removerReceita(id);
-                JOptionPane.showMessageDialog(null,"Receita removida com sucesso");
-            } catch (ReceitaNaoExisteExcpetion e) {
-                JOptionPane.showMessageDialog(null, "ID não encontrada.");
+            if(!(conta.getDespesas().size() == 0)) {
+                int id = Integer.parseInt(JOptionPane.showInputDialog("Qual id da receita? "));
+                try {
+                    conta.removerReceita(id);
+                    JOptionPane.showMessageDialog(null,"Receita removida com sucesso");
+                } catch (ReceitaNaoExisteExcpetion e) {
+                    JOptionPane.showMessageDialog(null, "ID não encontrada.");
+                }
+            }else{
+                JOptionPane.showMessageDialog(null,"Nenhuma receita foi cadastrada ainda.");
             }
+
         }));
 
 
