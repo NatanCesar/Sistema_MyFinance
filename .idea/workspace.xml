@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Tentativa de persitência de dados">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/ContaInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeReceitas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
+    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Continua dando problema na persistência de dados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Persistencia/GravadorDeDespesas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ContaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
       <recent name="MyFinance.GUI" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ContaTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFinance.Main" />
       <module name="Sistema_MyFinance" />
@@ -127,9 +123,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContaTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ContaTest.testaDespesas" />
-        <item itemvalue="JUnit.ContaTest" />
         <item itemvalue="JUnit.ContaTest.testaGravacaoDespesa" />
         <item itemvalue="JUnit.ContaTest.testaGravacao" />
       </list>
@@ -153,6 +149,8 @@
       <workItem from="1695294483410" duration="6111000" />
       <workItem from="1695412242217" duration="1087000" />
       <workItem from="1695574854597" duration="6366000" />
+      <workItem from="1695593823945" duration="74000" />
+      <workItem from="1695744240644" duration="3370000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Inicial">
       <created>1694690218633</created>
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695263629171</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Continua dando problema na persistência de dados">
+      <created>1695593855194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695593855194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +201,7 @@
     <MESSAGE value="Commit Inicial" />
     <MESSAGE value="Commit quase pronto" />
     <MESSAGE value="Tentativa de persitência de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tentativa de persitência de dados" />
+    <MESSAGE value="Continua dando problema na persistência de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continua dando problema na persistência de dados" />
   </component>
 </project>

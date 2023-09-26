@@ -6,6 +6,8 @@ import MyFinance.Model.Conta;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class MenuPrincipalGUI extends JFrame {
     JLabel titulo;
@@ -71,7 +73,9 @@ public class MenuPrincipalGUI extends JFrame {
         }));
 
         menuRemoverDespesa.addActionListener((ae -> {
-            if(!(conta.getDespesas().size() == 0)) {
+            if(conta.getDespesas().size() == 0) {
+                JOptionPane.showMessageDialog(null,"Nenhuma despesa foi cadastrada ainda.");
+            } else{
                 int id = Integer.parseInt(JOptionPane.showInputDialog("Qual id da despesa? "));
                 try {
                     conta.removerDespesa(id);
@@ -79,13 +83,13 @@ public class MenuPrincipalGUI extends JFrame {
                 } catch (DespesaNaoExisteExcpetion e) {
                     JOptionPane.showMessageDialog(null, "ID não encontrada.");
                 }
-            } else{
-                JOptionPane.showMessageDialog(null,"Nenhuma despesa foi cadastrada ainda.");
             }
 
         }));
         menuRemoverReceita.addActionListener((ae -> {
-            if(!(conta.getDespesas().size() == 0)) {
+            if(conta.getReceitas().size() == 0) {
+                JOptionPane.showMessageDialog(null,"Nenhuma receita foi cadastrada ainda.");
+            }else{
                 int id = Integer.parseInt(JOptionPane.showInputDialog("Qual id da receita? "));
                 try {
                     conta.removerReceita(id);
@@ -93,8 +97,6 @@ public class MenuPrincipalGUI extends JFrame {
                 } catch (ReceitaNaoExisteExcpetion e) {
                     JOptionPane.showMessageDialog(null, "ID não encontrada.");
                 }
-            }else{
-                JOptionPane.showMessageDialog(null,"Nenhuma receita foi cadastrada ainda.");
             }
 
         }));
@@ -104,6 +106,20 @@ public class MenuPrincipalGUI extends JFrame {
         barraDeMenu.add(menuPesquisar);
         barraDeMenu.add(menuRemover);
         setJMenuBar(barraDeMenu);
+
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e){
+                int resp = JOptionPane.showConfirmDialog(null,
+                        "Tem certeza de que quer sair e salvar?");
+                if (resp == JOptionPane.YES_OPTION) {
+                    JOptionPane.showMessageDialog(null,"Salvo.");
+                    conta.salvarDados();
+                    System.exit(0);
+                }
+            }
+        });
+
 
 
     }

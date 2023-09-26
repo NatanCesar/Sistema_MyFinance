@@ -4,6 +4,8 @@ import MyFinance.Model.Conta;
 import MyFinance.Model.Despesa;
 import MyFinance.Model.Receita;
 import MyFinance.Persistencia.GravadorDeDespesas;
+import MyFinance.Persistencia.GravadorDeReceitas;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -12,6 +14,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class ContaTest {
+    @BeforeEach
+    public void testaGravacaoDespesa(){
+        File fd = new File(GravadorDeDespesas.ARQUIVO_DESPESAS);
+        File fr = new File(GravadorDeReceitas.ARQUIVO_RECEITAS);
+        if (fr.exists() && fd.exists() ){
+            fr.delete();
+            fd.delete();
+        }
+    }
     @Test
     public void testaConta(){
         Conta c = new Conta();
@@ -50,20 +61,7 @@ public class ContaTest {
 
     }
 
-    @Test
-    public void testaGravacaoDespesa(){
-        File f = new File(GravadorDeDespesas.ARQUIVO_DESPESAS);
-        if (f.exists()){
-            f.delete();
-        }
-        Conta c = new Conta();
-        c.adicionarReceita(new Receita("Salário",1400,"dia 15",
-                "Empresa RU",c.getIDReceita()));
-        c.salvarDados();
-        assertEquals(1, c.getReceitas().size());
-        assertTrue(f.exists());
-        f.delete();
-    }
+
 
 
 

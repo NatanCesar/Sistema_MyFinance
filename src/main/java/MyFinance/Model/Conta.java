@@ -118,6 +118,17 @@ public class Conta implements ContaInterface {
         try {
             this.despesasList = this.gravadorDeDespesas.recuperarDespesas();
             this.receitasList = this.gravadorDeReceitas.recuperarReceitas();
+            for (Receita r: receitasList.values()){
+                this.saldo += r.getValor();
+                this.valorReceitas += r.getValor();
+                this.id =+ 1;
+            }
+            for (Despesa d: despesasList.values()){
+                this.despesasList.put(d.getId(), d);
+                this.saldo -= d.getValor();
+                this.valorDespesas += d.getValor();
+                this.id += 1;
+            }
         } catch (IOException e){
             System.err.println(e.getMessage());
         }
