@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Problema com a persistência foi resolvido">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ContaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Commit final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +54,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\natan\Desktop\My\Progamação\Sistema_MyFinance\src\main\java\MyFinance" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="MyFinance.Model" />
     </key>
@@ -148,7 +148,7 @@
       <workItem from="1695574854597" duration="6366000" />
       <workItem from="1695593823945" duration="74000" />
       <workItem from="1695744240644" duration="3898000" />
-      <workItem from="1695840077359" duration="903000" />
+      <workItem from="1695840077359" duration="1235000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Inicial">
       <created>1694690218633</created>
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695750043105</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Commit final">
+      <created>1695841489090</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695841489091</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +215,7 @@
     <MESSAGE value="Tentativa de persitência de dados" />
     <MESSAGE value="Continua dando problema na persistência de dados" />
     <MESSAGE value="Problema com a persistência foi resolvido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problema com a persistência foi resolvido" />
+    <MESSAGE value="Commit final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit final" />
   </component>
 </project>
