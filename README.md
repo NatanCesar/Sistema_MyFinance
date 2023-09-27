@@ -1,5 +1,5 @@
 # Sistema_MyFinance
-<h1My Finance</h1>
+<h1>My Finance</h1>
 <p>Projeto para disciplina de programação orientada a objetos </p>
 <h2>Funcionalidades:</h2>
 <p>- Cadastrar despesas e receitas</p>
