@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ContaTest {
     @BeforeEach
-    public void testaGravacaoDespesa(){
+    public void apagaReceitaDespesaFile(){
         File fd = new File(GravadorDeDespesas.ARQUIVO_DESPESAS);
         File fr = new File(GravadorDeReceitas.ARQUIVO_RECEITAS);
         if (fr.exists() && fd.exists() ){
@@ -58,12 +58,5 @@ public class ContaTest {
         c.removerReceita(receita.getId());
         assertFalse(c.getReceitas().containsKey(receita.getId()));
         assertEquals(0,c.getReceitas().size());
-
     }
-
-
-
-
-
-
 }

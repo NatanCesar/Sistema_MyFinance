@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Continua dando problema na persistência de dados">
+    <list default="true" id="397056c0-f54c-41f3-9c32-de6194bd0f60" name="Changes" comment="Problema com a persistência foi resolvido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/GUI/MenuPrincipalGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFinance/Model/Conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ContaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
       <recent name="MyFinance.GUI" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContaTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFinance.Main" />
       <module name="Sistema_MyFinance" />
@@ -123,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContaTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ContaTest" />
         <item itemvalue="JUnit.ContaTest.testaDespesas" />
         <item itemvalue="JUnit.ContaTest.testaGravacaoDespesa" />
         <item itemvalue="JUnit.ContaTest.testaGravacao" />
@@ -150,7 +147,8 @@
       <workItem from="1695412242217" duration="1087000" />
       <workItem from="1695574854597" duration="6366000" />
       <workItem from="1695593823945" duration="74000" />
-      <workItem from="1695744240644" duration="3370000" />
+      <workItem from="1695744240644" duration="3898000" />
+      <workItem from="1695840077359" duration="903000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Inicial">
       <created>1694690218633</created>
@@ -180,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695593855194</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Problema com a persistência foi resolvido">
+      <created>1695750043105</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695750043105</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +207,7 @@
     <MESSAGE value="Commit quase pronto" />
     <MESSAGE value="Tentativa de persitência de dados" />
     <MESSAGE value="Continua dando problema na persistência de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continua dando problema na persistência de dados" />
+    <MESSAGE value="Problema com a persistência foi resolvido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problema com a persistência foi resolvido" />
   </component>
 </project>
