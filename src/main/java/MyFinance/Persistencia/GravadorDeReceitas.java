@@ -17,7 +17,7 @@ public class GravadorDeReceitas {
             in = new ObjectInputStream(new FileInputStream(ARQUIVO_RECEITAS));
             return (HashMap<Integer, Receita>) in.readObject();
         } catch (Exception e){
-            System.out.println("Não foi possível recuperar as receitas");
+            System.out.println("Não foii possível recuperar as receitas");
             throw new IOException("Não foi possível recuperar as receitas do arquivo "+ ARQUIVO_RECEITAS);
 
         } finally {
